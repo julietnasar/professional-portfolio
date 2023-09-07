@@ -4,12 +4,17 @@ h1 {
 
 }
 
+a {
+  font-size: 1.5em;
+}
+
 .App {
   text-align: center;
 }
 
+/* Greeting Section */
 .greeting {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 3.5em;
 }
 
@@ -25,25 +30,54 @@ h1 {
   /* align items vertically, in this case */
   align-items: center;
   /* align items horizontally, in this case */
-  height: 500px;
+  /* height: 500px; */
 }
-
-
 
 .center-col {
   width: 60%;
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myNav {
+  color: #f0eddc;
+  bs-nav-link-color:#f0eddc;
+}
+
+
+/* Education Section */
+
+.education {
+  background-color: #f0eddc ;
+  color: #2c4c79;
+  /* margin-top: 5%; */
   display: flex;
+  /* establish flex container */
   flex-direction: column;
-  align-items: center;
+  /* make main-axis vertical */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align items vertically, in this case */
+  align-items: center;
+  /* align items horizontally, in this case */
+  /* height: 500px; */
+  padding: 5%;
+}
+
+/* Key Projects Section */
+
+.keyProjects {
+  background-color:  #2c4c79;
+  color: #f0eddc;
+  /* margin-top: 5%; */
+  display: flex;
+  /* establish flex container */
+  flex-direction: column;
+  /* make main-axis vertical */
+  justify-content: center;
+  /* align items vertically, in this case */
+  align-items: center;
+  /* align items horizontally, in this case */
+  /* height: 500px; */
+  padding: 5%;
 }
 
 
