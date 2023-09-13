@@ -1,14 +1,20 @@
 import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Col, Row, Nav, NavItem, NavLink } from 'reactstrap';
 
 const Intro = () => {
   return (
     <div class="intro">
-        <br/>
-        <h1 class="greeting">Hi! I'm Juliet</h1>
-        <div class="center-col">
-            <h4>A passionate and creative problem solver looking to transition into a career in Software Engineering</h4>
-            <h3>Learn More About me Below!</h3>
+      <br />
+      <Row>
+        <Col
+          xs="6"
+        >
+          <h1 class="greeting">Hi! I'm Juliet</h1>
+            <p>A passionate and creative problem solver looking to transition into a career in Software Engineering
+              <br />
+              Learn More About me Below!
+            </p>
+
             <Nav vertical class="myNav">
               <NavItem>
                 <NavLink href="#">Education</NavLink>
@@ -23,9 +29,15 @@ const Intro = () => {
                 <NavLink href="#">Skills</NavLink>
               </NavItem>
             </Nav>
-        </div>
-        <br/>
+        </Col>
+        <Col
+          xs="6"
+        >
+          <img class="intro-img" src="blurred-headshot.png" alt="Headshot" />
+        </Col>
+      </Row>
     </div>
+
   );
 };
 

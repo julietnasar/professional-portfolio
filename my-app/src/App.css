@@ -1,54 +1,97 @@
 h1 {
-  margin-block-end: 0;
-  font-family: 'Courier New', monospace;
-
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 a {
   font-size: 1.5em;
 }
 
-.App {
-  text-align: center;
+p {
+  font-family: "Clarkson",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  text-rendering: geometricPrecision;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  font-family: "Clarkson",Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1em;
+  letter-spacing: 0;
+  text-rendering: geometricPrecision;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* .App {
+  text-align: center;
+} */
 
 /* Greeting Section */
 .greeting {
-  margin-top: 15%;
-  font-size: 3.5em;
+  font-size: 3.8em;
 }
 
 .intro {
-  background-color: #3c659f;
-  color: #f0eddc;
-  /* margin-top: 5%; */
+  background-color: #8EA4A6;
+  color: #FFFFFF;
   display: flex;
   /* establish flex container */
   flex-direction: column;
   /* make main-axis vertical */
-  justify-content: center;
+  justify-content: left;
   /* align items vertically, in this case */
-  align-items: center;
-  /* align items horizontally, in this case */
-  /* height: 500px; */
+  padding: 5%;
 }
 
-.center-col {
-  width: 60%;
-  text-align: center;
-}
 
 .myNav {
   color: #f0eddc;
   bs-nav-link-color:#f0eddc;
+  align-items: left;
+}
+
+.Nav.NavItem.NavLink {
+  color: #ffffff;
+}
+
+.nav{
+  /* nav text color */
+--bs-nav-link-color: #ffffff;
+/* nav text color when hover */
+--bs-nav-link-hover-color: #ffffff;
+}
+
+.intro-img {
+  align-items: right;
+  justify-content: right;
+  float: right;
+  display: flex;
 }
 
 
 /* Education Section */
 
 .education {
-  background-color: #f0eddc ;
-  color: #2c4c79;
+  background-color: #ffffff ;
+  color: #000000;
   /* margin-top: 5%; */
   display: flex;
   /* establish flex container */
@@ -65,8 +108,8 @@ a {
 /* Key Projects Section */
 
 .keyProjects {
-  background-color:  #2c4c79;
-  color: #f0eddc;
+  background-color:  #6B6464;
+  color: #ffffff;
   /* margin-top: 5%; */
   display: flex;
   /* establish flex container */
