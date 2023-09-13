@@ -8,9 +8,6 @@ h1 {
   font-weight: bold;
 }
 
-a {
-  font-size: 1.5em;
-}
 
 p {
   font-family: "Clarkson",Helvetica,sans-serif;
@@ -40,9 +37,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .App {
-  text-align: center;
-} */
+.title {
+  font-size: 3.4em;
+}
 
 /* Greeting Section */
 .greeting {
@@ -97,12 +94,18 @@ body {
   /* establish flex container */
   flex-direction: column;
   /* make main-axis vertical */
-  justify-content: center;
+  justify-content: left;
   /* align items vertically, in this case */
-  align-items: center;
+  align-items: left;
   /* align items horizontally, in this case */
   /* height: 500px; */
   padding: 5%;
+}
+
+.education-point{
+  justify-content: left;
+  /* align items vertically, in this case */
+  align-items: left;
 }
 
 /* Key Projects Section */

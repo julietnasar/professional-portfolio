@@ -1,41 +1,30 @@
 import React from 'react';
-import { Col, Card, CardProps, CardText, Row, CardTitle, Button, CardGroup } from 'reactstrap';
 
 const Education = () => {
   return (
     <div class="education">
-      <h1>Education</h1>
+      <h1 class="title">Education</h1>
       <br/>
-      <CardGroup>
+      
+      <h2>Undergraduate & Graduate Degrees</h2>
+      <br/>
+      <div class="education-point">
+        <h3>Yeshiva University, Sy Syms School of Business</h3>
+        <p><i>September 2018 - January 2022</i><br/>
+            Bachelor of Science, Data Analytics & Computer Science (minor)<br/>
+            GPA: 3.866 | Sum Cumma Laude, Dean’s List (7/7 Semesters)</p>
+      </div>
+      <br/>
+      <div class="education-point">
+        <h3>Georgia Institute of Technology</h3>
+        <p><i>Beginning January 2024</i><br/>
+            Masters of Computer Science</p>
+      </div>
+      <br/>
+      <h2>Certifications & External Courses</h2>
+      <br/>
 
-        <Card body>
-          <CardTitle tag="h5">
-            Yeshiva University, Sy Syms School of Business
-          </CardTitle>
-          <CardText>
-            September 2018 - January 2022
-            Bachelor of Science, Data Analytics & Computer Science (minor)
-            GPA: 3.866 | Sum Cumma Laude, Dean’s List (7/7 Semesters)
-          </CardText>
-          <Button>
-            Yeshiva University Website
-          </Button>
-        </Card>
 
-        <Card body>
-          <CardTitle tag="h5">
-            (Hopefully) Georgia Tech
-          </CardTitle>
-          <CardText>
-            Beginning January 2024
-            Masters in Computer Science
-          </CardText>
-          <Button>
-            Georgia Tech OMSCS Program
-          </Button>
-        </Card>
-
-      </CardGroup>
     </div>
   );
 };

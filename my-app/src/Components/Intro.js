@@ -20,13 +20,13 @@ const Intro = () => {
                 <NavLink href="#">Education</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Experience</NavLink>
+                <NavLink href="#">Work Experience</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#">Key Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Skills</NavLink>
+                <NavLink href="#">Technical Skills</NavLink>
               </NavItem>
             </Nav>
         </Col>
