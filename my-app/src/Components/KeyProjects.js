@@ -9,7 +9,7 @@ import {
 
 const items = [
     {
-        src: 'https://picsum.photos/id/123/1200/400',
+        src: 'https://picsum.photos/id/456/1200/400',
         altText: 'Slide 1',
         title: 'Covid Happiness Analysis, Python',
         caption: 'Utilized Python and Spark (PySpark) on a Linux system to compare sentiment analysis scores of hundreds of thousands of Yelp restaurant reviews and cross referenced that data with Covid deaths over time ',
