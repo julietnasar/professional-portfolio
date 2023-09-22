@@ -34,7 +34,7 @@ const Education = () => {
           <br />
           <div class="education-point">
             <h4><b><em>Udemy</em></b></h4>
-            <p>Agile Samurai Bootcamp</p>
+            <p><a href="https://www.udemy.com/certificate/UC-19fc35b4-6000-4bba-b6e4-ac977467c572/">Agile Samurai Bootcamp</a></p>
             <p>Alteryx Bootcamp</p>
           </div>
           <div class="education-point">
