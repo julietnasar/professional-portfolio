@@ -1,102 +1,95 @@
-import React, { useState } from 'react';
-import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
-} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardGroup} from 'reactstrap';
 
-const items = [
-    {
-        src: 'https://picsum.photos/id/456/1200/400',
-        altText: 'Slide 1',
-        title: 'Covid Happiness Analysis, Python',
-        caption: 'Utilized Python and Spark (PySpark) on a Linux system to compare sentiment analysis scores of hundreds of thousands of Yelp restaurant reviews and cross referenced that data with Covid deaths over time ',
-        key: 1,
-    },
-    {
-        src: 'https://picsum.photos/id/456/1200/400',
-        altText: 'Slide 2',
-        title: 'Memory Allocator, C',
-        caption: 'Implemented a memory allocator by storing virtual memory spaces in a doubly linked list and implementing functions to remove, add, and merge memory spaces when necessary',
-        key: 2,
-    },
-    {
-        src: 'https://picsum.photos/id/678/1200/400',
-        altText: 'Slide 3',
-        title: 'Contraceptive Method Choice Analysis Modelling, R',
-        caption: 'Tested several predictive models for predicting contraceptive method choice based on a variety of variables, the optimal model being Random Forest with a 27.7% misclassification rate',
-        key: 3,
-    },
-];
-
-function KeyProjects(args) {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
-
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    };
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    };
-
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    };
-
-    const slides = items.map((item) => {
-        return (
-            <CarouselItem
-                onExiting={() => setAnimating(true)}
-                onExited={() => setAnimating(false)}
-                key={item.src}
-            >
-                <img src={item.src} alt={item.altText} />
-                <CarouselCaption
-                    captionText={item.caption}
-                    captionHeader={item.caption}
-                />
-            </CarouselItem>
-        );
-    });
-
+const KeyProjects = () => {
     return (
         <div class="keyProjects">
-            <h1 class="title">Key Projects</h1>
-            <br/>
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-                {...args}
+            <CardGroup>
+            <Card
+                style={{
+                    width: '19rem'
+                }}
             >
-                <CarouselIndicators
-                    items={items}
-                    activeIndex={activeIndex}
-                    onClickHandler={goToIndex}
+                <img
+                    alt="Sample"
+                    src="https://picsum.photos/300/200"
                 />
-                {slides}
-                <CarouselControl
-                    direction="prev"
-                    directionText="Previous"
-                    onClickHandler={previous}
+                <CardBody>
+                    <CardTitle tag="h5">
+                    Covid Happiness Analysis
+                    </CardTitle>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        Python, PySpark, Linux
+                    </CardSubtitle>
+                    <CardText>
+                    Utilized Python and Spark (PySpark) on a Linux system to compare sentiment analysis scores of hundreds of thousands of Yelp restaurant reviews and cross referenced that data with Covid deaths over time
+                    </CardText>
+                    <Button href="https://github.com/julietnasar/covid_happiness">
+                        See on GitHub
+                    </Button>
+                </CardBody>
+            </Card>
+
+            <Card
+                style={{
+                    width: '19rem'
+                }}
+            >
+                <img
+                    alt="Sample"
+                    src="https://picsum.photos/300/200"
                 />
-                <CarouselControl
-                    direction="next"
-                    directionText="Next"
-                    onClickHandler={next}
+                <CardBody>
+                    <CardTitle tag="h5">
+                    Memory Allocator
+                    </CardTitle>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        C
+                    </CardSubtitle>
+                    <CardText>
+                    Implemented a memory allocator by storing virtual memory spaces in a doubly linked list and implementing functions to remove, add, and merge memory spaces when necessary
+                    </CardText>
+                    <Button href="https://github.com/julietnasar/Memory_Allocator">
+                        See on GitHub
+                    </Button>
+                </CardBody>
+            </Card>
+            <Card
+                style={{
+                    width: '19rem'
+                }}
+            >
+                <img
+                    alt="Sample"
+                    src="https://picsum.photos/300/200"
                 />
-            </Carousel>
+                <CardBody>
+                    <CardTitle tag="h5">
+                    Contraceptive Method Choice Analysis
+                    </CardTitle>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        R, Predictive Modeling
+                    </CardSubtitle>
+                    <CardText>
+                    Tested several predictive models for predicting contraceptive method choice based on a variety of variables, the optimal model being Random Forest with a 27.7% misclassification rate
+                    </CardText>
+                    <Button href="https://github.com/julietnasar/cmc-analysis">
+                        See on GitHub
+                    </Button>
+                </CardBody>
+            </Card>
+            </CardGroup>
         </div>
-    );
+    )
 }
+
 
 export default KeyProjects;

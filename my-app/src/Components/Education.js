@@ -35,10 +35,10 @@ const Education = () => {
           <div class="education-point">
             <h4><b><em>Udemy</em></b></h4>
             <p><a href="https://www.udemy.com/certificate/UC-19fc35b4-6000-4bba-b6e4-ac977467c572/">Agile Samurai Bootcamp</a></p>
-            <p>Alteryx Bootcamp</p>
+            <p><a href="https://www.udemy.com/certificate/UC-7541c7cc-e8a2-4e9f-9ca5-5f7cb5f7f10f/">Alteryx Bootcamp</a></p>
           </div>
           <div class="education-point">
-            <h4><b><em>Scrum Alliance</em></b></h4>
+            <h4><b><em>ScrumAlliance</em></b></h4>
             <p>Certified Scrum Master</p>
           </div>
         </Col>
