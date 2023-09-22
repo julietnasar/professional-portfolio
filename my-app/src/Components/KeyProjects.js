@@ -70,7 +70,7 @@ function KeyProjects(args) {
 
     return (
         <div class="keyProjects">
-            <h1>Key Projects</h1>
+            <h1 class="title">Key Projects</h1>
             <br/>
             <Carousel
                 activeIndex={activeIndex}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Nav, NavItem, NavLink } from 'reactstrap';
+import { Col, Row, Nav, NavItem, NavLink, List } from 'reactstrap';
 
 const Intro = () => {
   return (
@@ -10,12 +10,22 @@ const Intro = () => {
           xs="6"
         >
           <h1 class="greeting">Hi! I'm Juliet</h1>
-            <p>A passionate and creative problem solver looking to transition into a career in Software Engineering
+            <h2>A <b>passionate and creative</b> problem solver looking to transition into a <b>career in Software Engineering</b>
               <br />
-              Learn More About me Below!
-            </p>
+              <br />
 
-            <Nav vertical class="myNav">
+            </h2>
+            <h3>
+            <b>Here are some quick facts about me:</b></h3>
+            <h4>
+                <List>
+                  <li>I am excited to begin my online <b>masters in Computer Science</b> at Georgia Tech in January 2024</li>
+                  <li>I am a <b>certified Scrum Master</b> and enjoy introducing productivity enhancements to teams through Agile methodologies</li>
+                  <li>I am currently looking to <b>transition to software engineering</b></li>
+                </List>
+            </h4>
+
+            {/* <Nav vertical class="myNav">
               <NavItem>
                 <NavLink href="#">Education</NavLink>
               </NavItem>
@@ -28,7 +38,7 @@ const Intro = () => {
               <NavItem>
                 <NavLink href="#">Technical Skills</NavLink>
               </NavItem>
-            </Nav>
+            </Nav> */}
         </Col>
         <Col
           xs="6"
