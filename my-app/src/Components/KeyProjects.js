@@ -3,15 +3,16 @@ import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardGroup} f
 const KeyProjects = () => {
     return (
         <div class="keyProjects">
+            <h1 class="title">Key Projects</h1>
             <CardGroup>
             <Card
                 style={{
-                    width: '19rem'
+                    width: '21rem'
                 }}
             >
                 <img
                     alt="Sample"
-                    src="https://picsum.photos/300/200"
+                    src="covid-happiness-project.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
@@ -34,12 +35,12 @@ const KeyProjects = () => {
 
             <Card
                 style={{
-                    width: '19rem'
+                    width: '21rem'
                 }}
             >
                 <img
                     alt="Sample"
-                    src="https://picsum.photos/300/200"
+                    src="memory-allocator.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
@@ -61,12 +62,12 @@ const KeyProjects = () => {
             </Card>
             <Card
                 style={{
-                    width: '19rem'
+                    width: '21rem'
                 }}
             >
                 <img
                     alt="Sample"
-                    src="https://picsum.photos/300/200"
+                    src="cmc-analysis.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
