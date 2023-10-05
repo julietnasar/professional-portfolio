@@ -48,6 +48,7 @@ body {
 
 .intro {
   background-color: #8EA4A6;
+  /* background-image: url('/my-app/public/website-background-designs.png'); */
   color: #FFFFFF;
   display: flex;
   /* establish flex container */

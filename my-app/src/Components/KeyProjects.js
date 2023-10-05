@@ -12,7 +12,7 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="covid-happiness.png"
+                    src="./professional-portfolio/covid-happiness.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
@@ -40,7 +40,7 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="memory-allocator.png"
+                    src="./professional-portfolio/memory-allocator.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
@@ -67,7 +67,7 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="cmc-analysis.png"
+                    src="./professional-portfolio/cmc-analysis.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
