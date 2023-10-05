@@ -12,7 +12,7 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="covid-happiness-project.png"
+                    src="covid-happiness.png"
                 />
                 <CardBody>
                     <CardTitle tag="h5">
