@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Nav, NavItem, NavLink, List } from 'reactstrap';
+import { Col, Row, List } from 'reactstrap';
 
 const Intro = () => {
   return (
@@ -24,21 +24,6 @@ const Intro = () => {
                   <li>I am currently looking to <b>transition to software engineering</b></li>
                 </List>
             </h4>
-
-            {/* <Nav vertical class="myNav">
-              <NavItem>
-                <NavLink href="#">Education</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Work Experience</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Key Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Technical Skills</NavLink>
-              </NavItem>
-            </Nav> */}
         </Col>
         <Col
           xs="6"
@@ -47,7 +32,6 @@ const Intro = () => {
         </Col>
       </Row>
     </div>
-
   );
 };
 
