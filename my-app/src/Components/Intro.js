@@ -28,7 +28,8 @@ const Intro = () => {
         <Col
           xs="6"
         >
-          <img class="intro-img" src="./professional-portfolio/blurred-headshot.png" alt="Headshot" />
+          <img class="intro-img" src="blurred-headshot.png" alt="Headshot" />
+          {/* for when local: ./professional-portfolio/blurred-headshot.png */}
         </Col>
       </Row>
     </div>

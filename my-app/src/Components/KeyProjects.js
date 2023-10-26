@@ -40,7 +40,8 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="./professional-portfolio/memory-allocator.png"
+                    src="memory-allocator.png"
+                    // for when local: ./professional-portfolio/memory-allocator.png
                 />
                 <CardBody>
                     <CardTitle tag="h5">
@@ -67,7 +68,8 @@ const KeyProjects = () => {
             >
                 <img
                     alt="Sample"
-                    src="./professional-portfolio/cmc-analysis.png"
+                    src="cmc-analysis.png"
+                    // for when local ./professional-portfolio/cmc-analysis.png
                 />
                 <CardBody>
                     <CardTitle tag="h5">
